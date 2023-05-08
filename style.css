@@ -69,6 +69,7 @@ font-style:italic;
 
 .banner-btn a:hover span{
     width:100%;
+    border-radius: 20px;
 }
 .banner-btn a:hover{
 color:#000;
@@ -401,6 +402,7 @@ hr{
 
 .testimonial-col p{
     font-size: 14px;
+    font-style: italic;
 
 }
 
@@ -506,13 +508,16 @@ hr{
     line-height: 40px;
     border: 1px solid #009688;
     margin:40px 5px 0;
-    color: #009688;
+    color:rgb(93, 93, 228);
     cursor: pointer;
     transition: .5s;
+    border-radius: 20px;
 }
 
+
+
 .social-link .fa:hover{
-    background: #009688;
+    background: rgb(93, 93, 228);
     color: #fff;
     transform: translateY(-7px);
 }
