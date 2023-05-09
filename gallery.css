@@ -1,0 +1,37 @@
+.bodycolor{
+    background-color:#efefef;
+}
+#gallery{
+    width:100%;
+    padding:70px 0;
+    padding-top: 50px;
+    padding-bottom: 5px;
+}
+
+#photo {
+    line-height:0;
+    -webkit-column-count:5; /* split it into 5 columns */
+    -webkit-column-gap:5px; /* give it a 5px gap between columns */
+    -moz-column-count:5;
+    -moz-column-gap:5px;
+    column-count:5;
+    column-gap:5px;
+ }
+ #photo img {
+    width: 100% !important;
+    height: auto !important;
+    margin-bottom:5px; /* to match column gap */
+ }
+
+
+ @media screen and (max-width:770px){
+    #photo {
+        line-height:0;
+        -webkit-column-count:2; /* split it into 5 columns */
+        -webkit-column-gap:5px; /* give it a 5px gap between columns */
+        -moz-column-count:2;
+        -moz-column-gap:1px;
+        column-count:2;
+        column-gap:5px;
+     }
+ }

@@ -159,7 +159,7 @@ nav ul li a{
     
 }
 /* Gallery */
-#gallery{
+#collection{
     width: 100%;
     padding:35px 0;
     background-color: #efefef;
@@ -422,7 +422,7 @@ hr{
 
 .user-info .fa{
     margin-left: 10px;
-    color:#27c0ff;
+    color:rgb(241, 47, 118);
     font-size: 20px;
 
 }

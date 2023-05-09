@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://Stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="123.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="bodycolor">
+    
+    
+    <section id="gallery">
+        <div class="title-text">
+            <p>Gallery</p>
+            <h1>Our Gallery</h1>
+          </div>
+        </section>
+
+        <div id="sideNav">
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#footer">MEET US</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="menuBtn">
+             <img src="menu.png" id="menu">
+        </div>
+
+        <script>
+            var menuBtn = document.getElementById("menuBtn")
+            var sideNav = document.getElementById("sideNav")
+            sideNav.style.right = "-250px"
+         menuBtn.onclick = function(){
+        if(sideNav.style.right == "-250px"){
+            sideNav.style.right = "0";
+            menu.src = "close.png";
+        }
+        else{
+            sideNav.style.right = "-250px";
+            menu.src = "menu.png";
+        }
+    }     
+    
+    var scroll = new SmoothScroll('a[href*="#"]', {
+        speed: 1000,
+        speedAsDuration: true
+    });
+        </script>
+          <!-- gallery photo -->
+
+          <div id="photo">
+            <a href="#"><img src="lazy/style1.jpg"></a>
+            <a href="#"><img src="lazy/style2.jpg"></a>
+            <a href="#"><img src="lazy/style3.jpg"></a>
+            <a href="#"><img src="lazy/style4.jpg"></a>
+            <a href="#"><img src="lazy/style5.jpg"></a>
+            <a href="#"><img src="lazy/style6.jpg"></a>
+            <a href="#"><img src="lazy/style7.jpg"></a>
+            <a href="#"><img src="lazy/style8.jpg"></a>
+            <a href="#"><img src="lazy/style9.jpg"></a>
+            <a href="#"><img src="lazy/style10.jpg"></a>
+            <a href="#"><img src="aasish-sir.jpg"></a>
+            <a href="#"><img src="lazy/next1.jpg"></a>
+            <a href="#"><img src="lazy/next2.jpg"></a>
+            <a href="#"><img src="lazy/next3.jpg"></a>
+            <a href="#"><img src="lazy/next4.jpg"></a>
+            <a href="#"><img src="lazy/next5.jpg"></a>
+            <a href="#"><img src="lazy/next6.jpg"></a>
+            <a href="#"><img src="lazy/next7.jpg"></a>
+            <a href="#"><img src="lazy/next8.jpg"></a>
+           </div>
+        </section>
+        
+
+        <!-- brand-logo -->
+       
+      <div id="row">
+        <div class="colum1">
+          <img src="lazy/loreal.webp" alt="loreal">
+        </div>
+        <div class="colum2">
+          <img src="lazy/gk.webp" alt="gk">
+        </div>
+        <div class="colum3 ">
+          <img src="lazy/sch.webp" alt="schwarkopf">
+        </div>
+      </div>
+      
+
+    <!-- footer -->
+    <section id="footer">
+        <img src="pnglogo.png" class="footer-img">
+        <div class="title-text">
+            <p>CONTACT</p>
+                <h1>Visit Shop Today</h1>
+              </div>
+              <div class="footer-row">
+                <div class="footer-left">
+                    <h1>Opening Hours</h1>
+                    <p><i class="fa fa-clock-o"></i>Monday To Fryday 9am to 8:30pm</p>
+                    <p>Sunday To Saturday 9am to 9pm</p>
+                </div>
+                <div class="footer-right">
+                    <h1>Get In Touch</h1>
+                    <p>Sevoke Rd Ward 13, Punjabi Para
+                      <br>
+                     Siliguri, West Bengal 734401<i class="fa fa-map-marker"></i></p>
+                    <p>123123@gmail.com<i class="fa fa-paper-plane"></i></p>
+                    <p>+91-9593674833<i class="fa fa-phone"></i></p>
+                </div>
+              </div>
+
+             <div class="social-link">
+              <div>
+               <a href="https://www.facebook.com/aasish.roy.75"> <i class="fa fa-facebook"></i></a>
+               <a href="https://www.instagram.com/aasish_appearance_salon/"> <i class="fa fa-instagram" style="color:rgb(137, 10, 10);"></i></a>
+            
+                <p>Thank You Visit Again</p>
+             </div>
+    </section>
+    
+</body>
+</html>
