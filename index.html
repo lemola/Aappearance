@@ -62,6 +62,28 @@
     <div id="menuBtn">
          <img src="menu.png" id="menu">
     </div>
+
+    <script>
+      var menuBtn = document.getElementById("menuBtn")
+      var sideNav = document.getElementById("sideNav")
+      sideNav.style.right = "-250px"
+   menuBtn.onclick = function(){
+  if(sideNav.style.right == "-250px"){
+      sideNav.style.right = "0";
+      menu.src = "close.png";
+  }
+  else{
+      sideNav.style.right = "-250px";
+      menu.src = "menu.png";
+  }
+}     
+
+var scroll = new SmoothScroll('a[href*="#"]', {
+  speed: 1000,
+  speedAsDuration: true
+});
+  </script>
+
         <!-- FEATURES -->
     <section id="feature">
      <div class="title-text">
@@ -149,202 +171,64 @@
             <div class="service-desc">
                 <h3>Dry shampoo</h3>
                 <hr>
-                <p>Dry shampoo is like coffee, 
-                  <br>
-                  But for hair.
+                <p>Shampooing your hair is one of the foremost essential cleanliness that individuals ought to take after on a normal premise.
                 </p>
             </div>
         </div>
         </div>
 
+        <div class="single-service1">
+          <img src="lazy/coloring.jpg">
+          <div class="overlay1"></div>
+          <div class="service-desc1">
+              <h3>Coloring</h3>
+              <hr>
+              <p>Coloring your hair is a way to
+                 change things up and have fun with fashion.
+              </p>
+          </div>
+      </div>
+      </div>
+
+      <div class="single-service1">
+        <img src="lazy/treatment.jpg">
+        <div class="overlay1"></div>
+        <div class="service-desc1">
+            <h3>Treatments</h3>
+            <hr>
+            <p> A hair treatment can help you get the long lost luster of your hair back and make your hair smooth and shiny again.
+            </p>
+        </div>
+    </div>
+    </div>
+
       </section>
 
-      <!-- Gallery -->
+      <!-- collection -->
+      
     <section id="collection">
         <div class="title-text">
             <p>collection</p>
             <h1>Collections</h1>
-            
-            <style>
-        
-                * {box-sizing: border-box;}
-                body {font-family: Verdana, sans-serif;}
-                .mySlides {display: none;}
-                img {vertical-align: middle;}
-                
-                /* Slideshow container */
-                .slideshow-container {
-                  max-width:500px;
-                  position: relative;
-                  margin: auto;
-                  padding: 40px 0;
-                  
-                  
-                }
-                
-                /* Caption text */
-                /* .text {
-                  color: #f2f2f2;
-                  font-size: 15px;
-                  padding: 8px 12px;
-                  position: absolute;
-                  bottom: 8px;
-                  width: 100%;
-                  text-align: center;
-                } */
-                
-                /* Number text (1/3 etc) */
-                /* .numbertext {
-                  color: #f2f2f2;
-                  font-size: 12px;
-                  padding: 8px 12px;
-                  position: absolute;
-                  top: 0;
-                } */
-                
-                /* The dots/bullets/indicators */
-                /* .dot {
-                  height: 15px;
-                  width: 15px;
-                  margin: 0 2px;
-                  background-color: #bbb;
-                  border-radius: 50%;
-                  display: inline-block;
-                  transition: background-color 0.6s ease;
-                }
-                
-                .active {
-                  background-color: #717171;
-                }
-                 */
-                /* Fading animation */
-                .fade {
-                  animation-name: fade;
-                  animation-duration: 1.5s;
-                }
-                
-                @keyframes fade {
-                  from {opacity: .4} 
-                  to {opacity: 1}
-                }
-                
-                /* On smaller screens, decrease text size */
-                @media only screen and (max-width: 300px) {
-                  .text {font-size: 11px}
-                  .slideshow-container {
-                  position: relative;
-                  margin: auto;
-                  width: 90%;
-                }
+            <div class="center1">
+            <div class="scroll-container">
+              <img src="aasish-sir.jpg" alt="img">
+              <img src="Front/karan.jpg" alt="img">
+              <img src="Front/flower.jpg" alt="img">
+              <img src="lazy/style1.jpg" alt="img">
+              <img src="lazy/style2.jpg" alt="img">
+              <img src="lazy/style1.jpg" alt="img">
+              <img src="lazy/style8.jpg" alt="img">
+              <img src="lazy/style7.jpg" alt="img">
+              <img src="lazy/style2.jpg" alt="img">
+              <img src="lazy/style7.jpg" alt="img">
+              <img src="lazy/style8.jpg" alt="img">
+              <img src="lazy/style9.jpg" alt="img">
+              <img src="lazy/style10.jpg" alt="img">
+          
+            </div>
+          </div>
 
-                }
-                </style>
-                </head>
-                <body>
-                    <!-- images -->
-                
-                <div class="slideshow-container">
-                
-                <div class="mySlides fade">
-                  
-                  <img src="Front/karan.jpg" style="width:100%">
-                  
-                </div>
-                
-                <div class="mySlides fade">
-                  
-                  <img src="Front/flower.jpg" style="width:100%">
-                  
-                </div>
-                
-                <div class="mySlides fade">
-                  
-                  <img src="Front/front.jpg" style="width:100%">
-                  
-                </div>
-
-                <div class="mySlides fade">
-                    <img src="lazy/style1.jpg" style="width:100%">
-                  </div>
-
-                  <div class="mySlides fade">
-                    <img src="lazy/style2.jpg" style="width:100%">
-                  </div>
-
-                  <div class="mySlides fade">
-                    <img src="lazy/style3.jpg" style="width:100%">
-                  </div>
-                  <div class="mySlides fade">
-                    <img src="lazy/style4.jpg" style="width:100%">
-                  </div>
-                  <div class="mySlides fade">
-                    <img src="lazy/style5.jpg" style="width:100%">
-                  </div>
-
-                  <div class="mySlides fade">
-                    <img src="lazy/style6.jpg" style="width:100%">
-                  </div>
-
-                  <div class="mySlides fade">
-                    <img src="lazy/style7.jpg" style="width:100%">
-                  </div>
-
-                  <div class="mySlides fade">
-                    <img src="lazy/style8.jpg" style="width:100%">
-                  </div>
-
-                  <div class="mySlides fade">
-                    <img src="lazy/style9.jpg" style="width:100%">
-                  </div>
-
-                  <div class="mySlides fade">
-                    <img src="lazy/style10.jpg" style="width:100%">
-                  </div>
-
-                </div>
-                <br>
-                
-                <div style="text-align:center">
-                  <span class="dot"></span> 
-                  <span class="dot"></span> 
-                  <span class="dot"></span> 
-                  <span class="dot"></span> 
-                  <span class="dot"></span> 
-                  <span class="dot"></span>
-                  <span class="dot"></span> 
-                  <span class="dot"></span> 
-                  <span class="dot"></span>                 
-                  <span class="dot"></span>                 
-                  <span class="dot"></span>                 
-                  <span class="dot"></span>                 
-                  <span class="dot"></span>                 
-                  <span class="dot"></span>                 
-                  <span class="dot"></span>                 
-                  <span class="dot"></span>                 
-
-                </div>
-                
-                <script>
-                let slideIndex = 0;
-                showSlides();
-                
-                function showSlides() {
-                  let i;
-                  let slides = document.getElementsByClassName("mySlides");
-                  let dots = document.getElementsByClassName("dot");
-                  for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";  
-                  }
-                  slideIndex++;
-                  if (slideIndex > slides.length) {slideIndex = 1}    
-                  for (i = 0; i < dots.length; i++) {
-                    dots[i].className = dots[i].className.replace(" active", "");
-                  }
-                  slides[slideIndex-1].style.display = "block";  
-                  dots[slideIndex-1].className += " active";
-                  setTimeout(showSlides, 4000); // Change image every 4 seconds
-                }
-                </script>
         </div>
 
     </section>
@@ -423,7 +307,7 @@
         <img src="pnglogo.png" class="footer-img">
         <div class="title-text">
             <p>CONTACT</p>
-                <h1>Visit Shop Today</h1>
+                <h1>Visit Salon Today</h1>
               </div>
               <div class="footer-row">
                 <div class="footer-left">
@@ -436,7 +320,7 @@
                     <p>Sevoke Rd Ward 13, Punjabi Para
                       <br>
                      Siliguri, West Bengal 734401<i class="fa fa-map-marker"></i></p>
-                    <p>123123@gmail.com<i class="fa fa-paper-plane"></i></p>
+                    <p>aasishroy21@gmail.com<i class="fa fa-paper-plane"></i></p>
                     <p>+91-9593674833<i class="fa fa-phone"></i></p>
                 </div>
               </div>
@@ -454,26 +338,6 @@
 
 
 
-
-    <script>
-        var menuBtn = document.getElementById("menuBtn")
-        var sideNav = document.getElementById("sideNav")
-        sideNav.style.right = "-250px"
-     menuBtn.onclick = function(){
-    if(sideNav.style.right == "-250px"){
-        sideNav.style.right = "0";
-        menu.src = "close.png";
-    }
-    else{
-        sideNav.style.right = "-250px";
-        menu.src = "menu.png";
-    }
-}     
-
-var scroll = new SmoothScroll('a[href*="#"]', {
-	speed: 1000,
-	speedAsDuration: true
-});
-    </script>
+    
 </body>
 </html>

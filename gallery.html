@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,9 +11,10 @@
     <link rel="stylesheet" href="123.css">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <section class="bodycolor">
+<body class="bodycolor">
+
     
+
     
     <section id="gallery">
         <div class="title-text">
@@ -53,31 +55,236 @@
         speedAsDuration: true
     });
         </script>
-          <!-- gallery photo -->
 
-          <div id="photo">
-            <a href="#"><img src="lazy/style1.jpg"></a>
-            <a href="#"><img src="lazy/style2.jpg"></a>
-            <a href="#"><img src="lazy/style3.jpg"></a>
-            <a href="#"><img src="lazy/style4.jpg"></a>
-            <a href="#"><img src="lazy/style5.jpg"></a>
-            <a href="#"><img src="lazy/style6.jpg"></a>
-            <a href="#"><img src="lazy/style7.jpg"></a>
-            <a href="#"><img src="lazy/style8.jpg"></a>
-            <a href="#"><img src="lazy/style9.jpg"></a>
-            <a href="#"><img src="lazy/style10.jpg"></a>
-            <a href="#"><img src="aasish-sir.jpg"></a>
-            <a href="#"><img src="lazy/next1.jpg"></a>
-            <a href="#"><img src="lazy/next2.jpg"></a>
-            <a href="#"><img src="lazy/next3.jpg"></a>
-            <a href="#"><img src="lazy/next4.jpg"></a>
-            <a href="#"><img src="lazy/next5.jpg"></a>
-            <a href="#"><img src="lazy/next6.jpg"></a>
-            <a href="#"><img src="lazy/next7.jpg"></a>
-            <a href="#"><img src="lazy/next8.jpg"></a>
-           </div>
-        </section>
         
+
+
+         <!-- gallery photos -->
+          <div class="main12">
+          
+         <div class="row">
+           <div class="column">
+             <img src="lazy/next1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+           </div>
+           <div class="column">
+             <img src="lazy/next2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+           </div>
+           <div class="column">
+             <img src="lazy/next3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+           </div>
+           <div class="column">
+             <img src="lazy/next4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+           </div>
+           <div class="column">
+            <img src="lazy/next5.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+          </div>
+          <div class="column">
+            <img src="lazy/next6.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+          </div>
+          <div class="column">
+            <img src="lazy/next7.jpg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+          </div>
+          <div class="column">
+            <img src="lazy/next8.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+          </div>
+          <div class="column">
+            <img src="lazy/style1.jpg" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+          </div>
+          <div class="column">
+            <img src="lazy/style2.jpg" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+          </div>
+          <div class="column">
+            <img src="lazy/style3.jpg" style="width:100%" onclick="openModal();currentSlide(11)" class="hover-shadow cursor">
+          </div>
+          <div class="column">
+            <img src="lazy/style4.jpg" style="width:100%" onclick="openModal();currentSlide(12)" class="hover-shadow cursor">
+          </div>
+          <div class="column">
+            <img src="lazy/style5.jpg" style="width:100%" onclick="openModal();currentSlide(13)" class="hover-shadow cursor">
+          </div>
+          <div class="column">
+            <img src="lazy/style6.jpg" style="width:100%" onclick="openModal();currentSlide(14)" class="hover-shadow cursor">
+          </div>
+          <div class="column">
+            <img src="lazy/style7.jpg" style="width:100%" onclick="openModal();currentSlide(15)" class="hover-shadow cursor">
+          </div>
+          <div class="column">
+            <img src="lazy/style8.jpg" style="width:100%" onclick="openModal();currentSlide(16)" class="hover-shadow cursor">
+          </div>
+          <div class="column">
+            <img src="lazy/style9.jpg" style="width:100%" onclick="openModal();currentSlide(17)" class="hover-shadow cursor">
+          </div>
+          <div class="column">
+            <img src="lazy/style10.jpg" style="width:100%" onclick="openModal();currentSlide(18)" class="hover-shadow cursor">
+          </div>
+          <div class="column">
+            <img src="Front/color-hair.jpg" style="width:100%" onclick="openModal();currentSlide(19)" class="hover-shadow cursor">
+          </div>
+          <div class="column">
+            <img src="Front/flower.jpg" style="width:100%" onclick="openModal();currentSlide(20)" class="hover-shadow cursor">
+          </div>
+          <div class="column">
+            <img src="Front/front.jpg" style="width:100%" onclick="openModal();currentSlide(21)" class="hover-shadow cursor">
+          </div>
+          <div class="column">
+            <img src="Front/karan.jpg" style="width:100%" onclick="openModal();currentSlide(22)" class="hover-shadow cursor">
+          </div>
+
+         </div>
+         
+         <div id="myModal" class="modal">
+           <span class="close cursor" onclick="closeModal()">&times;</span>
+           <div class="modal-content">
+         
+             <div class="mySlides">
+               <div class="numbertext"></div>
+               <img src="lazy/next1.jpg" style="width:100%">
+             </div>
+         
+             <div class="mySlides">
+               <div class="numbertext"></div>
+               <img src="lazy/next2.jpg" style="width:100%">
+             </div>
+         
+             <div class="mySlides">
+               <div class="numbertext"></div>
+               <img src="lazy/next3.jpg" style="width:100%">
+             </div>
+             
+             <div class="mySlides">
+               <div class="numbertext"></div>
+               <img src="lazy/next4.jpg" style="width:100%">
+             </div>
+
+             <div class="mySlides">
+              <div class="numbertext"></div>
+              <img src="lazy/next5.jpg" style="width:100%">
+            </div>
+        
+            <div class="mySlides">
+              <div class="numbertext"></div>
+              <img src="lazy/next6.jpg" style="width:100%">
+            </div>
+        
+            <div class="mySlides">
+              <div class="numbertext"></div>
+              <img src="lazy/next7.jpg" style="width:100%">
+            </div>
+            
+            <div class="mySlides">
+              <div class="numbertext"></div>
+              <img src="lazy/next8.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+              <div class="numbertext"></div>
+              <img src="lazy/style1.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+              <div class="numbertext"></div>
+              <img src="lazy/style2.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+              <div class="numbertext"></div>
+              <img src="lazy/style3.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+              <div class="numbertext"></div>
+              <img src="lazy/style4.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+              <div class="numbertext"></div>
+              <img src="lazy/style5.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+              <div class="numbertext"></div>
+              <img src="lazy/style6.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+              <div class="numbertext"></div>
+              <img src="lazy/style7.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+              <div class="numbertext"></div>
+              <img src="lazy/style8.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+              <div class="numbertext"></div>
+              <img src="lazy/style9.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+              <div class="numbertext"></div>
+              <img src="lazy/style10.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+              <div class="numbertext"></div>
+              <img src="Front/color-hair.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+              <div class="numbertext"></div>
+              <img src="Front/flower.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+              <div class="numbertext"></div>
+              <img src="Front/front.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+              <div class="numbertext"></div>
+              <img src="Front/karan.jpg" style="width:100%">
+            </div>
+             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+             <a class="next" onclick="plusSlides(1)">&#10095;</a>
+         
+             <div class="caption-container">
+               <p id="caption"></p>
+             </div>
+         
+           </div>
+         </div>
+
+        </div>
+
+
+         <script>
+          function openModal() {
+            document.getElementById("myModal").style.display = "block";
+          }
+          
+          function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+          }
+          
+          var slideIndex = 1;
+          showSlides(slideIndex);
+          
+          function plusSlides(n) {
+            showSlides(slideIndex += n);
+          }
+          
+          function currentSlide(n) {
+            showSlides(slideIndex = n);
+          }
+          
+          function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+            captionText.innerHTML = dots[slideIndex-1].alt;
+          }
+          </script>
+         
+         
+
 
         <!-- brand-logo -->
        
@@ -99,7 +306,7 @@
         <img src="pnglogo.png" class="footer-img">
         <div class="title-text">
             <p>CONTACT</p>
-                <h1>Visit Shop Today</h1>
+                <h1>Visit Salon Today</h1>
               </div>
               <div class="footer-row">
                 <div class="footer-left">
@@ -125,6 +332,6 @@
                 <p>Thank You Visit Again</p>
              </div>
     </section>
-    
+
 </body>
 </html>
